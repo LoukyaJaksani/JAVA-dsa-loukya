@@ -1,23 +1,28 @@
 public class SearchElement {
     public static void main(String[] args) {
-        Node head = new Node(56);
-        head.next = new Node(82);
-        head.next.next = new Node(12);
+        Node head = new Node(29);
+        head.next = new Node(38);
+        head.next.next = new Node(30);
 
-        int search = 12;
+        int key = 38;
 
         Node temp = head;
+        boolean found = false;
 
         while (temp != null) {
-            if (temp.data == search) {
-                System.out.println(temp.data);
-                return;
+            if (temp.data == key) {
+                found = true;
+                break;
             }
 
             temp = temp.next;
-
         }
-        System.out.println("Element not found");
-    }
+        if (found) {
+            System.out.println("Element Found");
+        }
 
+        else {
+            System.out.println("Element not found");
+        }
+    }
 }

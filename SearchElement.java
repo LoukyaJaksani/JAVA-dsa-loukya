@@ -25,8 +25,4 @@ public class SearchElement {
             System.out.println("Element not found");
         }
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> ec007a9a38f04827f9b0a9fe0c36ba67be595409
